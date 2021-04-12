@@ -12,4 +12,5 @@ Before you build up on my work, you will find the following:
 What is left to do: 
 1) Work Package 2 (users)
 2) Work Package 3 (shopping cart) 
+3) Hosting the website - most likely wont be amazon like before due to the dynamic nature of php
 
