@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +8,7 @@
     <link rel="stylesheet" href="MyStyleB.css">
     <style>
         th {
-            background-color: #4CAF50;
+            background-color: rgb(240, 128, 128);
             color: white;
         }
         
@@ -18,7 +17,7 @@
         }
         
         .button {
-            background-color: #4CAF50;
+            background-color: rgb(240, 128, 128);
             border: none;
             color: white;
             padding: 15px 32px;
@@ -63,34 +62,21 @@
 
 <body>
 <?php  include "include/db.php"?>
-<?php session_start() ?>
-<?php
-
-if(isset($_SESSION['user_role'])){
-
-    if($_SESSION['user_role'] !== 'admin' ) {
-
-        header("Location: ../verdi/P5.php");
-
-    }
-
-}
-?>
     <div class="topnav">
         <a href="P7.html">Product List</a>
         <a href="P9.html">User List</a>
         <a href="P10.html">Order List</a>
         <div class="topnav-right">
-            <a href="../verdi/P5.php">Logout</a>
+            <a href="">Search</a>
         </div>
     </div>
 
     <div class="gen">
-        <h1>Back Store: Product List</h1>
+        <h1>Back Store: User List</h1>
 
         <div class="a">
-            <a href="include/P8_create_product.php">
-                <button class="button">ADD</button>
+            <a href="include/P10_create_user.php">
+                <button style="background-color: rgb(240, 128, 128);"class="button">ADD</button>
             </a>
         </div>
         <div style="overflow-x:auto;">
@@ -108,12 +94,12 @@ if(isset($_SESSION['user_role'])){
         
         switch($source) {
 
-            case 'add_products'; 
-            include "include/P8_create_product.php"; 
+            case 'add_user'; 
+            include "include/P10_create_user.php"; 
             break; 
 
-            case 'edit_products'; 
-            include 'include/P8_edit_product.php'; 
+            case 'edit_user'; 
+            include 'include/P10_edit_user.php'; 
             break; 
 
             case '34'; 
@@ -122,7 +108,7 @@ if(isset($_SESSION['user_role'])){
 
             default: 
 
-            include "include/view_all_products.php"; 
+            include "include/view_all_users.php"; 
 
             break; 
         }

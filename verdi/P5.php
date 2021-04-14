@@ -34,26 +34,23 @@ echo "yes it received";
         <section>
             <div class="login">
                 <h1>Log In</h1>
-                <form action="p5.php" method="POST">
+                <form action="include/login.php" method="post">
                     <div class="form">
 
                         <div>
 
-                            <label for="email" class="label">Email</label>
-                            <input type="text" name="email" id="email" class="rectangle" required>
+                            <label for="email" class="label">Username</label>
+                            <input type="text" name="username" id="email" class="rectangle" placeholder="verdi_lover77" required>
                             <br>
                         </div>
                         <div>
                             <label for="pswd" class="label">Password</label>
-                            <input type="password" name="pswd" id="pswd" class="rectangle" required>
+                            <input type="password" name="password" id="pswd" class="rectangle" placeholder="Password"required>
                             <br>
                         </div>
 
                         <div class="">
-                            <input type="submit" name="submit" id="" value ="Submit">
-                            <a href="" class="second_button" name="submit">
-                            Sign In
-                   </a>
+                            <input type="submit" name="login" class="second_button" id="" value ="Submit">
                         </div>
                 </form>
 
@@ -62,11 +59,6 @@ echo "yes it received";
                 <div class="reg">
                     <h2>Not registered with Verdi? <br>
                         <a href="P6_signup.html"> <u>Forgot Password</u></a>
-                    </h2>
-                </div>
-                <div class="reg">
-                    <h2>Employee?<br>
-                        <a href="P7.html"> <u>Click Here</u></a>
                     </h2>
                 </div>
             </div>
