@@ -26,7 +26,7 @@ echo "yes it received";
             <!-- The overall navigation bar -->
             <nav>
                 <ul>
-                    <li><a href="P1.html">Home</a></li>
+                    <li><a href="P2.php">Home</a></li>
                 </ul>
             </nav>
         </header>

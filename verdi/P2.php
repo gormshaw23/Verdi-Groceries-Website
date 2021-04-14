@@ -22,9 +22,9 @@
 <div class="container">
         <header class="topnav">
             <a href="P1.html">Home</a>
-            <a href="P2.html">Shop</a>
-            <a href="P4.html">My Cart</a>
-            <a href="P5.html">My Account</a>
+            <a href="P2.php">Shop</a>
+            <a href="P4_php.php">My Cart</a>
+            <a href="P5.php">My Account</a>
             <div class="topnav-right">
                 <a href="">Search</a>   
             </div>
@@ -32,12 +32,67 @@
 </div>
 <?php  include "include/db.php"?>    
     <body>
-        
         <img src="picturesD/Verdi.jpg" class="img1">
         <div class="Aisles">
-            <h1>Our products</h1>
+            <h1>Aisles</h1>
         </div>
         
+        <div class="cen">
+            
+        <h2></h2>
+        <div class="meats">
+        <div class="products">
+        
+            <div class="products_row">
+            <a href="P3_Meats.php">
+                <p style="color: white">Meats</p>
+            </a>
+            </div>
+            
+        </div>
+        </div>
+        
+        <h2></h2>
+        <div class="dairy">
+        <div class="products"> 
+        
+            <div class="products_row">
+            <a href="P3_dairy.html">
+                <p style="color: black">Dairy & Eggs</p>
+            </a>
+            </div>
+
+        </div>
+        </div>
+        
+        <h2></h2>
+        <div class="fruits">
+        <div class="products"> 
+        
+            <div class="products_row">
+            <a href="P3_fruits.php">
+                <p style="color: white">Fruits and Vegetables</p>
+            </a>
+            </div>
+
+        </div>
+        </div>
+    
+        
+        <h2></h2>
+        <div class="bread">
+        <div class="products"> 
+        
+            <div class="products_row">
+            <a href="P3_Breads.php">
+                <p style="color: black">Breads</p>
+            </a>
+            </div>
+
+        </div>
+        </div>
+            
+        </div>
         <div class="">
         <div class="">
         <div class="products">
@@ -45,32 +100,7 @@
             <div class="products_row">
             
                 <div class="col-4">
-                <?php 
 
-$query = "SELECT * FROM products"; 
-$select_products = mysqli_query($connection, $query); 
-
-while($row = mysqli_fetch_assoc($select_products)){
-
-    $product_id = $row['product_id'];
-    $product_name = $row['product_name'];
-    $product_img = $row['product_img'];
-    $product_price = $row['product_price'];
-    $product_facts = $row['product_facts'];
-    $product_inventory = $row['product_inventory'];
-    
-    ?>
-    
-                    <img src="picturesD/<?php echo $product_img;?>">
-                    <a href="P3_php.php">
-                        <h4><b><?php echo $product_name?></b></h4>
-                    </a>
-                    <h4><?php echo $product_price?></h4>
-                    <?php 
-}
-
-
-?>
             </div>
             </div>
         </div> 

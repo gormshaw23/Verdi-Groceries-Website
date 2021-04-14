@@ -105,9 +105,9 @@
     <div class="container">
         <header class="topnav">
             <a href="P1.html">Home</a>
-            <a href="P2.html">Shop</a>
-            <a href="P4.html">My Cart</a>
-            <a href="P5.html">My Account</a>
+            <a href="P2.php">Shop</a>
+            <a href="P4_php.php">My Cart</a>
+            <a href="P5.php">My Account</a>
             <div class="topnav-right">
                 <a href="">Search</a>
             </div>
@@ -172,7 +172,7 @@ while($row = mysqli_fetch_assoc($select_products)){
                 </div>
                 <button onclick="<?php echo $product_delete_p4;?>" class="delButton">Delete</button>
             </th>
-            <th>$<label id="breastPrice">14.29</label></th>
+            <th>$<label id="<?php echo $prod_price_calc_p4;?>">14.29</label></th>
             <th><button class="addButton" onclick="<?php echo $product_add_p4;?>">+</button><input id=<?php echo $product_data_p4;?> type=number min=0 value="0"><button class="addButton" onclick="<?php echo $product_remove_p4;?>">-</button></th>
             <th>$<label id="<?php echo $product_total_price;?>"></label></th>
         </tr>
