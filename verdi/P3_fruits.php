@@ -37,7 +37,8 @@
             <div class="col-2">
                 <h1>Apples</h1>
                 <img src="picturesD/apple.jpg">
-                <h4>4.99/kg</h4>
+                <h4 ><label id="applePrice">4.99</label>/kg</h4>
+                <label id="appleTotalPrice" style="display: none">0</label>
                 <input type="number" value="1" min="0" id="appleqty">
                 <button href="" class="first_button" onclick="addToCartApple()">Add To Cart</button>
             </div>

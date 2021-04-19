@@ -146,6 +146,7 @@ while($row = mysqli_fetch_assoc($select_products)){
     $product_img = $row['product_img'];
     $product_price = $row['product_price'];
     $prod_price_calc_p4 = $row['prod_price_calc_p4'];
+    $priceVar = $row['priceVar'];
     $product_facts = $row['product_facts'];
     $product_inventory = $row['product_inventory'];
     $product_qty = $row['product_qty'];
@@ -156,7 +157,7 @@ while($row = mysqli_fetch_assoc($select_products)){
     $product_delete_p4 = $row['product_delete_p4'];
     $product_remove_p4 = $row['product_remove_p4'];
     $product_total_price = $row['product_total_price'];
-    $priceVar = $row['priceVar'];
+   
 
 
     
@@ -172,9 +173,9 @@ while($row = mysqli_fetch_assoc($select_products)){
                 </div>
                 <button onclick="<?php echo $product_delete_p4;?>" class="delButton">Delete</button>
             </th>
-            <th><label id="<?php echo $prod_price_calc_p4;?>"><?php echo $product_price ?></label></th>
+            <th>$<label id="<?php echo $priceVar;?>"><?php echo $prod_price_calc_p4;?></label></th>
             <th><button class="addButton" onclick="<?php echo $product_add_p4;?>">+</button><input id=<?php echo $product_data_p4;?> type=number min=0 value="0"><button class="addButton" onclick="<?php echo $product_remove_p4;?>">-</button></th>
-            <th>$<label id="<?php echo $product_total_price;?>"></label></th>
+            <th>$<label id="<?php echo $product_total_price;?>">0</label></th>
         </tr>
         <?php 
 }
@@ -217,7 +218,7 @@ while($row = mysqli_fetch_assoc($select_products)){
         </tr>
     </table>
     <div class="containerBTN">
-        <a href="P2.html"><button class="continueShopping">Continue Shopping</button></a>
+        <a href="P2.php"><button class="continueShopping">Continue Shopping</button></a>
         <button class="checkoutButton" onclick="checkoutMessage()">Checkout</button>
         <button class="checkoutButton" onclick="updateCartTotal()">Calculate Total</button>
     </div>
