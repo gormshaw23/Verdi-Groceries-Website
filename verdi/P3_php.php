@@ -26,10 +26,10 @@
 <?php  include "include/db.php"?>
 <div class="container">
     <header class="topnav">
-        <a href="P1.html">Home</a>
-        <a href="P2.html">Shop</a>
-        <a href="P4.html">My Cart</a>
-        <a href="P5.html">My Account</a>
+            <a href="P1.php">Home</a>
+            <a href="P2.php">Shop</a>
+            <a href="P4_php.php">My Cart</a>
+            <a href="P5.php">My Account</a>
         <div class="topnav-right">
             <a href="">Search</a>
         </div>
