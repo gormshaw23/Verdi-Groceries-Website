@@ -115,8 +115,8 @@
                 <h1>Carrots</h1>
                 <img src="picturesD/carrot.jpg">
                 <h4 >$6.59/kg</h4>
-                <input type="number" value="1" min="0" id="carrotsqty">
-                <button class="first_button" onclick="addToCartCarrots()">Add To Cart</button>
+                <input type="number" value="1" min="0" id="carrotqty">
+                <button class="first_button" onclick="addToCartCarrot()">Add To Cart</button>
             </div>
             <div class="col-2">
                 
@@ -214,7 +214,7 @@
                 <img src="picturesD/tomatoes.jpg">
                 <h4 >$4.39/kg</h4>
                 <input type="number" value="1" min="0" id="tomatoqty">
-                <button class="first_button" onclick="addToCarttomato()">Add To Cart</button>
+                <button class="first_button" onclick="addToCartTomato()">Add To Cart</button>
             </div>
             <div class="col-2">
                 <button class="poof" onclick="ShowAndHide()">Click Here For Fun Fact!</button>
