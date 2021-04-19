@@ -61,7 +61,7 @@ if(isset($_GET['error'])==true)
 
                 <div class="reg">
                     <h2>Not registered with Verdi? <br>
-                        <a href="P6_signup.html"> <u>Forgot Password</u></a>
+                        <a href="P6.php"> <u>Sign Up Here!</u></a>
                     </h2>
                 </div>
             </div>
