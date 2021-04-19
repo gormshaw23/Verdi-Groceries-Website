@@ -77,8 +77,8 @@ if(isset($_SESSION['user_role'])){
 }
 ?>
     <div class="topnav">
-        <a href="P7.html">Product List</a>
-        <a href="P9.html">User List</a>
+        <a href="P7_admin.php">Product List</a>
+        <a href="P9_admin.php">User List</a>
         <a href="P10.html">Order List</a>
         <div class="topnav-right">
             <a href="../verdi/P5.php">Logout</a>
