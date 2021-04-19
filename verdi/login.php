@@ -7,6 +7,7 @@ if(isset($_POST['login'])){
 
      $username = $_POST['username'];
      $password = $_POST['password'];
+     $db_user_role= $POST['role'];
 
 
     $username = mysqli_real_escape_string($connection,$username);
@@ -32,8 +33,8 @@ if(isset($_POST['login'])){
     }
 
     if($username !== $db_user_name && $password !== $db_user_password){
-        header("Location: ../P5.php?error=1");
-    } else if($username == $db_user_name && $password == $db_user_password){
+        header("Location: ../verdi/P5.php?error=1");
+    } else if($username == $db_user_name && $password == $db_user_password&&$db_user_role=="admin"){
 
 
         $_SESSION['user_name'] = $db_user_name;
@@ -41,11 +42,21 @@ if(isset($_POST['login'])){
         $_SESSION['user_lastname'] = $db_user_lastname; 
         $_SESSION['user_role'] = $db_user_role;  
 
-        header("Location: ../P7_admin.php");
+        header("Location: ../verdi/P7_admin.php");
         
-    } else {
+    } else if($username == $db_user_name && $password == $db_user_password&&$db_user_role=="customer"){
 
-        header("Location: ../P5.php?error=1");
+
+        $_SESSION['user_name'] = $db_user_name;
+        $_SESSION['user_firstname'] = $db_user_firstname; 
+        $_SESSION['user_lastname'] = $db_user_lastname; 
+        $_SESSION['user_role'] = "customer";
+
+        header("Location: ../verdi/P4_php.php?success=1");
+        
+    }else {
+
+        header("Location: ../verdi/P5.php?error=1");
     }
 
 

@@ -34,7 +34,7 @@
             </div>
         </header>
 </div>
-<?php  include "include/db.php"?>    
+<?php  include "db.php"?>    
     <body>
         <img src="picturesD/Verdi.jpg" class="img1">
         <div class="Aisles">

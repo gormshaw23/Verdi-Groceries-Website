@@ -99,9 +99,14 @@
         }
     </style>
 </head>
-<?php  include "include/db.php"?>
+<?php  include "db.php"?>
 <body class="body3">
-
+<?php
+if(isset($_GET['success'])==true)
+{
+    echo'<font-family Comic Sans><p align="center">Welcome, Verdi Shopper!</p></font-family>';
+}
+?>
     <div class="container">
         <header class="topnav">
             <a href="P1.php">Home</a>

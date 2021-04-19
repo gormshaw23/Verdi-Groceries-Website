@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="myStyle.css">
-    <title>Verdi Orders</title>
+    <title>Verdi Cart</title>
     <style>
         @media screen and (max-width: 600px) {
             .topnav a:not(:first-child) {
@@ -104,10 +104,10 @@
 
     <div class="container">
         <header class="topnav">
-            <a href="P1.php">Home</a>
-            <a href="P2.php">Shop</a>
+           
+            <a href="P7_admin.php">Product list</a>
             <div class="topnav-right">
-                <a href="">Search</a>
+            <a href="../verdi/P5.php">Logout</a>
             </div>
         </header>
     </div>
@@ -130,7 +130,7 @@
             <th class="org" style="background-color: #4CAF50">Quantity</th>
             <th class="org" style="background-color: #4CAF50">Total</th>
         </tr>
-        
+        <a href="P12.php">Add products</a>
         <?php 
 
 $query = "SELECT * FROM products"; 
@@ -138,6 +138,7 @@ $select_products = mysqli_query($connection, $query);
 
 while($row = mysqli_fetch_assoc($select_products)){
 
+    
     $product_id = $row['product_id'];
     $product_name = $row['product_name'];
     $product_link = $row['product_link'];
@@ -160,6 +161,7 @@ while($row = mysqli_fetch_assoc($select_products)){
 
     
     ?>
+        
         <tr id="<?php echo $product_id_p4;?>" class='row'>
             <th class="cartItemField">
                 <div class="containerDescription2">

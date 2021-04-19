@@ -8,6 +8,7 @@ if(isset($_GET['error'])==true)
 {
     echo'<font-family Comic Sans><p align="center">Incorrect username or password</p></font-family>';
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +38,7 @@ if(isset($_GET['error'])==true)
         <section>
             <div class="login">
                 <h1>Log In</h1>
-                <form action="include/login.php" method="post">
+                <form action="login.php" method="post">
                     <div class="form">
 
                         <div>

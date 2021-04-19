@@ -62,7 +62,7 @@
 </head>
 
 <body>
-<?php  include "include/db.php"?>
+<?php  include "db.php"?>
 <?php session_start() ?>
 <?php
 
@@ -77,7 +77,7 @@ if(isset($_SESSION['user_role'])){
     <div class="topnav">
         <a href="P7_admin.php">Product List</a>
         <a href="P9_admin.php">User List</a>
-        <a href="include/P11.php">Order List</a>
+        <a href="P11.php">Order List</a>
         <div class="topnav-right">
             <a href="../verdi/P5.php">Logout</a>
         </div>
@@ -87,7 +87,7 @@ if(isset($_SESSION['user_role'])){
         <h1>Back Store: Product List</h1>
 
         <div class="a">
-            <a href="include/P8_create_product.php">
+            <a href="P8_create_product.php">
                 <button class="button">ADD</button>
             </a>
         </div>
@@ -107,11 +107,11 @@ if(isset($_SESSION['user_role'])){
         switch($source) {
 
             case 'add_products'; 
-            include "include/P8_create_product.php"; 
+            include "P8_create_product.php"; 
             break; 
 
             case 'edit_products'; 
-            include 'include/P8_edit_product.php'; 
+            include 'P8_edit_product.php'; 
             break; 
 
             case '34'; 
@@ -120,7 +120,7 @@ if(isset($_SESSION['user_role'])){
 
             default: 
 
-            include "include/view_all_products.php"; 
+            include "view_all_products.php"; 
 
             break; 
         }
