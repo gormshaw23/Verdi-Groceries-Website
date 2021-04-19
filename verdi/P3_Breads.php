@@ -31,6 +31,27 @@
             </div>       
         </header>
 </div>
+<?php
+$query = "SELECT * FROM products"; 
+$select_products = mysqli_query($connection, $query); 
+while($row = mysqli_fetch_assoc($select_products)){
+    
+    $product_id = $row['product_id'];
+    $product_name = $row['product_name'];
+    $product_link = $row['product_link'];
+    $product_img = $row['product_img'];
+    $product_price = $row['product_price'];
+    $prod_price_calc_p4 = $row['prod_price_calc_p4'];
+    $product_facts = $row['product_facts'];
+    $product_inventory = $row['product_inventory'];
+    $product_qty = $row['product_qty'];
+    $product_addToCart_P3 = $row['product_addToCart_P3'];
+    $product_id_p4 = $row['product_id_p4'];
+    $product_add_p4 = $row['product_add_p4'];
+    $product_data_p4 = $row['product_data_p4'];
+    $product_delete_p4 = $row['product_delete_p4'];
+    $product_remove_p4 = $row['product_remove_p4'];
+?>
 <body>
     <div class="products"> 
         <div class="products_row">
@@ -127,6 +148,7 @@
                 <img src="picturesD/Verdi.jpg" class="img1">
             </div>
         </div>
+        
     </div>
     
     <footer>
@@ -141,4 +163,5 @@
         </div>
     </footer>
 </body>
+
 </html>

@@ -17,6 +17,10 @@
                 display: block;
             }
         }
+        p
+        {
+            font-size: 80px; font-family: serif;
+        }
     </style>
 </head>
 <div class="container">
