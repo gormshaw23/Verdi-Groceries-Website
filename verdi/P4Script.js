@@ -780,7 +780,7 @@ function addApple()
      document.getElementById('tort').className = "visible";
      if(localStorage.getItem('yogqty')>0)
      document.getElementById('yog').className = "visible";
-     if(localStorage.getItem('bell')>0)
+     if(localStorage.getItem('bellqty')>0)
      document.getElementById('bell').className = "visible";
      if(localStorage.getItem('butterqty')>0)
      document.getElementById('butter').className = "visible";

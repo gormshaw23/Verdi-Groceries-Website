@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="myStyle.css">
-    <title>Verdi Cart</title>
+    <title>Verdi Orders</title>
     <style>
         @media screen and (max-width: 600px) {
             .topnav a:not(:first-child) {
@@ -99,15 +99,13 @@
         }
     </style>
 </head>
-<?php  include "include/db.php"?>
+<?php  include "db.php"?>
 <body class="body3">
 
     <div class="container">
         <header class="topnav">
             <a href="P1.php">Home</a>
             <a href="P2.php">Shop</a>
-            <a href="P4_php.php">My Cart</a>
-            <a href="P5.php">My Account</a>
             <div class="topnav-right">
                 <a href="">Search</a>
             </div>
@@ -116,7 +114,7 @@
 
     <img src="picturesD/Verdi.jpg" class="img1">
     <div class="Aisles">
-        <h1>My Cart</h1>
+        <h1>Orders</h1>
     </div>
 
     <table border="border" class="namefield2" id="MyTable">
@@ -157,6 +155,10 @@ while($row = mysqli_fetch_assoc($select_products)){
     $product_delete_p4 = $row['product_delete_p4'];
     $product_remove_p4 = $row['product_remove_p4'];
     $product_total_price = $row['product_total_price'];
+   
+
+
+    
     ?>
         <tr id="<?php echo $product_id_p4;?>" class='row'>
             <th class="cartItemField">
@@ -214,7 +216,6 @@ while($row = mysqli_fetch_assoc($select_products)){
         </tr>
     </table>
     <div class="containerBTN">
-        <a href="P2.php"><button class="continueShopping">Continue Shopping</button></a>
         <button class="checkoutButton" onclick="checkoutMessage()">Checkout</button>
         <button class="checkoutButton" onclick="updateCartTotal()">Calculate Total</button>
     </div>

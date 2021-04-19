@@ -42,7 +42,7 @@ if(isset($_POST['login'])){
         $_SESSION['user_role'] = $db_user_role;  
 
         header("Location: ../P7_admin.php");
-
+        
     } else {
 
         header("Location: ../P5.php?error=1");
