@@ -29,7 +29,7 @@ if(isset($_GET['error'])==true)
             <!-- The overall navigation bar -->
             <nav>
                 <ul>
-                    <li><a href="P2.php">Home</a></li>
+                    <li><a href="P1.php">Home</a></li>
                 </ul>
             </nav>
         </header>
