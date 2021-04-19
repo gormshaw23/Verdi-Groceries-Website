@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="myStyle.css">
     <title>Verdi Cart</title>
+    <script src="P4Script.js"></script>
     <style>
         @media screen and (max-width: 600px) {
             .topnav a:not(:first-child) {
@@ -21,7 +22,7 @@
                 width: 100%;
             }
         }
-        
+        a{font-family: Georgia, 'Times New Roman', Times, serif;}
         body {
             background-color: rgb(213, 247, 233);
         }
@@ -97,6 +98,7 @@
             border-radius: 30px;
             float:right;
         }
+        .nb{font-family:'Courier New', Courier, monospace}
     </style>
 </head>
 <?php  include "db.php"?>
@@ -105,9 +107,10 @@
     <div class="container">
         <header class="topnav">
            
-            <a href="P7_admin.php">Product list</a>
+            <a href="P7_admin.php" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:large">Product list</a>
+            <a href="P12.php"style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:large">Add Items to Order</a>
             <div class="topnav-right">
-            <a href="../verdi/P5.php">Logout</a>
+            <a href="../verdi/P5.php"style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:large">Logout</a>
             </div>
         </header>
     </div>
@@ -115,6 +118,7 @@
     <img src="picturesD/Verdi.jpg" class="img1">
     <div class="Aisles">
         <h1>Orders</h1>
+        
     </div>
 
     <table border="border" class="namefield2" id="MyTable">
@@ -130,7 +134,7 @@
             <th class="org" style="background-color: #4CAF50">Quantity</th>
             <th class="org" style="background-color: #4CAF50">Total</th>
         </tr>
-        <a href="P12.php">Add products</a>
+        
         <?php 
 
 $query = "SELECT * FROM products"; 
@@ -218,22 +222,24 @@ while($row = mysqli_fetch_assoc($select_products)){
         </tr>
     </table>
     <div class="containerBTN">
-        <button class="checkoutButton" onclick="checkoutMessage()">Checkout</button>
+        <button class="checkoutButton" onclick="orderPlaced()">Place Order</button>
         <button class="checkoutButton" onclick="updateCartTotal()">Calculate Total</button>
     </div>
     <footer>
         <div class="container">
             <div class="final_row">
                 <br><br>
+                <div style="background-color:#333; color:beige; max-width:100%">
                 <h2>Useful Links</h2>
                 <ul>
-                    <li><a href="http://www.omafra.gov.on.ca/english/crops/facts/10-013w.htm">About Bio Products</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Giuseppe_Verdi">About Verdi Products</a></li>
+                    <li><a href="http://www.omafra.gov.on.ca/english/crops/facts/10-013w.htm"style="background-color:#333; color:beige">About Bio Products</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Giuseppe_Verdi"style="background-color:#333; color:beige">About Verdi Products</a></li>
                 </ul>
+</div>
             </div>
         </div>
     </footer>
-    <script src="P4Script.js"></script>
+    
 </body>
 
 </html>

@@ -7,6 +7,7 @@
     <title>Verdi Groceries | Montreal Local Products</title>
     <link rel="stylesheet" href="myStyleS.css">
     <style>
+        a:hover{background-color: white; border-radius: 20px; padding:10px}
         .offerH {
             padding-top: 35px;
             width: auto;
@@ -72,11 +73,11 @@
 
             <!-- The overall navigation bar -->
             <nav>
-                <ul>
-                    <li><a href="P1.php">Home</a></li>
-                    <li><a href="P2.php">Shop</a></li>
-                    <li><a href="P4_php.php">My Cart</a></li>
-                    <li><a href="P5.php">My Account</a></li>
+                <ul class="second_row">
+                    <li><a style="color:black"href="P1.php" >Home</a></li>
+                    <li><a style="color:black"href="P2.php">Shop</a></li>
+                    <li><a style="color:black"href="P4_php.php">My Cart</a></li>
+                    <li><a style="color:black"href="P5.php">My Account</a></li>
                 </ul>
             </nav>
         </header>
@@ -122,7 +123,7 @@
                     <br> Look no further for the best products in Montreal at great prices.
                 </p>
 
-                <a href="products_page_p2.html" class="first_button">
+                <a href="P2.php" class="first_button">
                     Shop Now
                 </a>
 
@@ -140,7 +141,7 @@
             <h1>About Us</h1>
             <p> Based in the heart of Montreal,<br> Verdi is run by a team of Students from Concordia University.<br> <b>Sign up now</b> to receive our newsletter and special discounts.
                 <br>
-                <a href="" class="second_button">
+                <a href="P6.php" class="second_button">
                     Sign Up 
                 </a>
             </p>

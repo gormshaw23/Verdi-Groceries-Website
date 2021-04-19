@@ -110,17 +110,20 @@
         </div> 
     </body>
 
-<footer>
+    <footer>
         <div class="container">
             <div class="final_row">
+                <br><br>
+                <div style="background-color:#333; color:beige; max-width:100%">
                 <h2>Useful Links</h2>
                 <ul>
-                    <li><a href="http://www.omafra.gov.on.ca/english/crops/facts/10-013w.htm">About Bio Products</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Giuseppe_Verdi">About Verdi Products</a></li>
+                    <li><a href="http://www.omafra.gov.on.ca/english/crops/facts/10-013w.htm"style="background-color:#333; color:beige">About Bio Products</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Giuseppe_Verdi"style="background-color:#333; color:beige">About Verdi Products</a></li>
                 </ul>
+</div>
             </div>
         </div>
-        </footer>
+    </footer>
 
 </html>
                 

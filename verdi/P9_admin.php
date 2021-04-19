@@ -66,9 +66,7 @@
         <a href="P7_admin.php">Product List</a>
         <a href="P9_admin.php">User List</a>
         <a href="P11.php">Order List</a>
-        <div class="topnav-right">
-            <a href="">Search</a>
-        </div>
+        
     </div>
 
     <div class="gen">

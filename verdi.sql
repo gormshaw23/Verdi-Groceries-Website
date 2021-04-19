@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 19, 2021 at 10:18 AM
+-- Generation Time: Apr 19, 2021 at 08:54 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -52,7 +52,7 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `product_name`, `product_link`, `product_img`, `product_price`, `prod_price_calc_p4`, `priceVar`, `product_facts`, `product_inventory`, `product_qty`, `product_addToCart_P3`, `product_id_p4`, `product_add_p4`, `product_data_p4`, `product_delete_p4`, `product_remove_p4`, `product_total_price`) VALUES
-(1, 'Chicken Breast', 'P3_meats.php', 'chickenBreast.jpg', '$14.29/lb', '14.29', 'breastPrice', 'If you are looking to build and maintain muscle mass and strengthen your bones, this product is for you! Chicken breast is a great source of lean protein, contains zero carbs and has a very small amount of fat!', '134', 'breastqty', 'addToCartBreast()', 'breast', 'addBreast()', 'breastData', 'deleteBreast()', 'removeBreast()', 'breastTotalPrice'),
+(1, 'Chicken ', 'P3_meats.php', 'chickenBreast.jpg', '$14.29/lb', '14.29', 'breastPrice', 'If you are looking to build and maintain muscle mass and strengthen your bones, this product is for you! Chicken breast is a great source of lean protein, contains zero carbs and has a very small amount of fat!', '134', 'breastqty', 'addToCartBreast()', 'breast', 'addBreast()', 'breastData', 'deleteBreast()', 'removeBreast()', 'breastTotalPrice'),
 (2, 'Steak', 'P3_meats.php', 'steak.jpg', '$22.49/lb', '22.49', 'steakPrice', 'If you are looking for a food to help you control your weight and improve your immune function, steak is on the menu! Steak contains no carbs and provides a lot of protein. However, it also contains a fair share of fats! A food to enjoy ,but not every night!', '54', 'steakqty', 'addToCartSteak()', 'steak', 'addSteak()', 'steakData', 'deleteSteak()', 'removeSteak()', 'steakTotalPrice'),
 (3, 'Lamb', 'P3_meats.php', 'lamb.jpg', '$39.99/kg', '39.99', 'lambPrice', 'Like all red meats, lamb is a good way to prevent anemia ! Although lamb contains a high amount of fat, it is a great source of protein and contains many vitamines and minerals such as: vitamin B12, Selenium, Zinc, Niacin, Phosphurus, etc!', '47', 'lambqty', 'addToCartLamb()', 'lamb', 'addLamb()', 'lambData', 'deleteLamb()', 'removeLamb()', 'lambTotalPrice'),
 (4, 'Pork', 'P3_meats.php', 'pork.jpg', '$8.99/kg', '8.99', 'porkPrice', 'Did you know that pork helps cells grow and function ?! That\'s right! Pork is a great source of lean protein and has no carbs. Although it does contain a good amount of fat!', '145', 'porkqty', 'addToCartPork()', 'pork', 'addPork()', 'porkData', 'deletePork()', 'removePork()', 'porkTotalPrice'),
@@ -98,9 +98,10 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`user_id`, `user_name`, `user_password`, `user_firstname`, `user_lastname`, `user_email`, `user_image`, `user_role`, `extra`) VALUES
 (5, 'gormshaw23', '123', 'Shawn', 'Gorman', 'gorman.shawn23@hotmail.com', '', 'customer', ''),
 (6, 'therealbatman', 'joker123', 'batman', 'man', 'blabla@yahoo.ca', '', 'admin', ''),
-(7, 'toto', 'toto', 'Antonio', 'Reda', 'reda_antonio@yahoo.ca', '', 'customer', ''),
 (8, 'bob123', 'bob', 'bobby', 'bob', 'bob2@hotmail.com', '', 'customer', ''),
-(11, 'limitless', 'black hole', 'Satoru', 'Gojo', 'specialgrade@yahoo.com', '', 'customer', '');
+(11, 'limitless', 'black hole', 'Satoru', 'Gojo', 'specialgrade@yahoo.com', '', 'customer', ''),
+(13, 'toto', 'toto', 'anto', 'reda', 'admin@concordia.ca', '', 'admin', ''),
+(14, 'Choupichoupi', 'ilou', 'Choupis', 'Reda', 'beb@icloud.com', '', 'customer', '');
 
 --
 -- Indexes for dumped tables
@@ -132,7 +133,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `user_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -896,3 +896,11 @@ function checkoutMessage()
 {
     alert("Thank you for shopping at Verdi !\nEnjoy your fresh order!");
 }
+function orderPlaced()
+{
+    alert("Order has been placed!");
+}
+function clear()
+{
+   
+}

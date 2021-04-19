@@ -6,7 +6,7 @@ echo "yes it received";
 }
 if(isset($_GET['error'])==true)
 {
-    echo'<font-family Comic Sans><p align="center">Incorrect username or password</p></font-family>';
+    echo'<p align="center" style="background-color:#333; font-size:40px; color:white; font-family: Courier New, Courier, monospace ">Incorrect username or password</p>';
 }
 
 ?>
@@ -31,6 +31,7 @@ if(isset($_GET['error'])==true)
             <nav>
                 <ul>
                     <li><a href="P1.php">Home</a></li>
+                    <li><a href="P2.php">Shop</a></li>
                 </ul>
             </nav>
         </header>
@@ -68,7 +69,6 @@ if(isset($_GET['error'])==true)
             </div>
         </section>
     </div>
-
 
     <!-- The productcs page -->
 

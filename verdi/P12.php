@@ -11,7 +11,11 @@
         body {
             background-color: rgb(213, 247, 233);
         }
-        
+        .p12{max-width: 160px; float: left;}
+        img {width: 100%;
+    height: auto;
+    width:142px;
+    height: 142px;}
         @media screen and (max-width: 600px) {
             .topnav a:not(:first-child) {
                 display: none;
@@ -28,7 +32,7 @@
     <header class="topnav">
             
             <a href="P7_admin.php">Product list</a>
-            <a href="P7_admin.php">Order list</a>
+            <a href="P11.php">Order list</a>
         <div class="topnav-right">
             <a href="P5.php">Logout</a>
         </div>
@@ -63,32 +67,23 @@ while($row = mysqli_fetch_assoc($select_products)){
     $product_data_p4 = $row['product_data_p4'];
     $product_delete_p4 = $row['product_delete_p4'];
     $product_remove_p4 = $row['product_remove_p4'];
-    
-
-
-    
     ?>
+    <div>
             <div class="col-2">
-                <h1><?php echo $product_name; ?></h1>
+                <div class="img2">
+                <h1 style="font-size:40px"><?php echo $product_name; ?></h1>
                 <img src="picturesD/<?php echo $product_img;?>">
                 <h4><?php echo $product_price;?></h4>
                 <input type="number" value="1" min="0" id="<?php echo $product_qty; ?>">
-                <button href="" class="first_button" onclick="<?php echo $product_addToCart_P3; ?>">Add To Cart</button>
+                <button href="" class="first_button" onclick="<?php echo $product_addToCart_P3; ?>">Add To the order</button>
+                </div>
             </div>
 
-            
             <div class="col-2">
-
-                <div id="fun_fact">
-                    <h2>Fun Facts</h2>
-                    <p>
-                    <?php echo $product_facts;?>
-                    </p>
-                </div>
-           
-                <img src="picturesD/Verdi.jpg" class="img1">
                 
             </div>
+            <br><br><br><br><br><br><br><br><br><br>
+    </div>
             <?php 
 }
 
@@ -102,11 +97,13 @@ while($row = mysqli_fetch_assoc($select_products)){
     <footer>
         <div class="container">
             <div class="final_row">
+                <div style="background-color:#333; color:beige; max-width:100%">
                 <h2>Useful Links</h2>
                 <ul>
-                    <li><a href="http://www.omafra.gov.on.ca/english/crops/facts/10-013w.htm">About Bio Products</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Giuseppe_Verdi">About Verdi Products</a></li>
+                    <li ><a href="http://www.omafra.gov.on.ca/english/crops/facts/10-013w.htm"style="background-color:#333; color:beige">About Bio Products</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Giuseppe_Verdi"style="background-color:#333; color:beige">About Verdi Products</a></li>
                 </ul>
+            </div>
             </div>
         </div>
     </footer>
