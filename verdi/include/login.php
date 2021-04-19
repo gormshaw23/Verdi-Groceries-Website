@@ -1,6 +1,6 @@
 <?php include "db.php"; ?>
 <?php session_start(); ?>
-
+<script src="P3Script.js"></script>
 <?php 
 
 if(isset($_POST['login'])){
@@ -16,8 +16,9 @@ if(isset($_POST['login'])){
     $select_user_query = mysqli_query($connection, $query);
 
     if(!$select_user_query){
-
+        
         die("QUERY FAILED". mysqli_error($connection));
+        
     }
 
     while($row = mysqli_fetch_array($select_user_query)){
@@ -31,8 +32,7 @@ if(isset($_POST['login'])){
     }
 
     if($username !== $db_user_name && $password !== $db_user_password){
-        
-        header("Location: ../P5.php");
+        header("Location: ../P5.php?error=1");
     } else if($username == $db_user_name && $password == $db_user_password){
 
 
@@ -45,7 +45,7 @@ if(isset($_POST['login'])){
 
     } else {
 
-        header("Location: ../P5.php");
+        header("Location: ../P5.php?error=1");
     }
 
 

@@ -61,7 +61,7 @@
         <div class="products"> 
         
             <div class="products_row">
-            <a href="P3_dairy.html">
+            <a href="P3_dairy.php">
                 <p style="color: black">Dairy & Eggs</p>
             </a>
             </div>

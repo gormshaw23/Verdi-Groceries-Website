@@ -71,9 +71,7 @@ if(isset($_SESSION['user_role'])){
     if($_SESSION['user_role'] !== 'admin' ) {
 
         header("Location: ../verdi/P5.php");
-
     }
-
 }
 ?>
     <div class="topnav">

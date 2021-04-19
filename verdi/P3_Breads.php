@@ -20,6 +20,7 @@
         }
     </style>
 </head>
+<?php  include "include/db.php"?>
 <div class="container">
    <header class="topnav">
             <a href="P1.html">Home</a>
@@ -51,6 +52,7 @@ while($row = mysqli_fetch_assoc($select_products)){
     $product_data_p4 = $row['product_data_p4'];
     $product_delete_p4 = $row['product_delete_p4'];
     $product_remove_p4 = $row['product_remove_p4'];
+}
 ?>
 <body>
     <div class="products"> 
@@ -137,7 +139,7 @@ while($row = mysqli_fetch_assoc($select_products)){
                 <button class="first_button" onclick="addToCartTort()">Add To Cart</button>
             </div>
             <div class="col-2">
-                <button class="poof" onclick="ShowAndHide()">Click Here For Fun Fact!</button>
+                <button class="poof" onclick="ShowAndHide2()">Click Here For Fun Fact!</button>
                 
                 <div id="fun_fact" style="display: none">
                 <h2>Fun Facts</h2>

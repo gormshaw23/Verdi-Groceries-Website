@@ -184,11 +184,17 @@ window.onload=function()
     document.getElementById("yogqty").value=localStorage.getItem('yogqty');
 }
 
-function ShowAndHide() {
+function ShowAndHide() 
+{
             var x = document.getElementById("fun_fact");
-            if (x.style.display == 'none') {
+            if (x.style.display == 'none') 
+            {
                 x.style.display = 'block';
             } else {
             x.style.display = 'none';
             }
+}
+function errorPopUp()
+{
+    alert("Incorrect username or password. Try again.");
 }

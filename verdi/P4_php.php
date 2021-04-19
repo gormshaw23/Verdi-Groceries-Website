@@ -95,7 +95,7 @@
             padding: 8px 30px;
             margin: 30px 0;
             border-radius: 30px;
-            float: right;
+            float:right;
         }
     </style>
 </head>

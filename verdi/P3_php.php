@@ -80,7 +80,7 @@ while($row = mysqli_fetch_assoc($select_products)){
             
             <div class="col-2">
 
-                <div id="fun_fact" style="">
+                <div id="fun_fact">
                     <h2>Fun Facts</h2>
                     <p>
                     <?php echo $product_facts;?>

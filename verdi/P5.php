@@ -4,7 +4,10 @@ if(isset($_POST['submit'])){
 
 echo "yes it received"; 
 }
-
+if(isset($_GET['error'])==true)
+{
+    echo'<font-family Comic Sans><p align="center">Incorrect username or password</p></font-family>';
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
