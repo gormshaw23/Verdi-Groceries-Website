@@ -7,7 +7,7 @@
     <title>Verdi Groceries | Montreal Local Products</title>
     <link rel="stylesheet" href="myStyleS.css">
     <style>
-        a:hover{background-color: white; border-radius: 20px; padding:10px}
+        a:hover{background-color: white; border-radius: 20px; padding:2px}
         .offerH {
             padding-top: 35px;
             width: auto;
@@ -73,7 +73,7 @@
 
             <!-- The overall navigation bar -->
             <nav>
-                <ul class="second_row">
+                <ul>
                     <li><a style="color:black"href="P1.php" >Home</a></li>
                     <li><a style="color:black"href="P2.php">Shop</a></li>
                     <li><a style="color:black"href="P4_php.php">My Cart</a></li>
@@ -84,7 +84,7 @@
         
         <section class="second_row">
             <div class="col-1">
-                <h1>Welcome, <span id="name">Person!</span></h1>
+                <h1>Welcome!</h1>
             </div>
         </section>
         
@@ -123,7 +123,7 @@
                     <br> Look no further for the best products in Montreal at great prices.
                 </p>
 
-                <a href="P2.php" class="first_button">
+                <a href="P2.php" class="first_button" style="padding:10px">
                     Shop Now
                 </a>
 
@@ -141,7 +141,7 @@
             <h1>About Us</h1>
             <p> Based in the heart of Montreal,<br> Verdi is run by a team of Students from Concordia University.<br> <b>Sign up now</b> to receive our newsletter and special discounts.
                 <br>
-                <a href="P6.php" class="second_button">
+                <a href="P6.php" class="second_button"style="padding:10px">
                     Sign Up 
                 </a>
             </p>
@@ -150,17 +150,16 @@
     </section>
 
     <footer>
-        <div class="container">
-            <div class="final_row">
-                <h2>Useful Links</h2>
+        <div class="container" style="margin:auto">
+            <div class="final_row"style="text-align:center">
+                <h2 style="text-align:center">Useful Links</h2>
                 <ul>
-                    <li><a href="https://youtu.be/bss-jJCTiAY">About Montreal</a></li>
-                    <li><a href="https://www.concordia.ca/about.html">About Concordia University</a></li>
-                    <li><a href="https://www.concordia.ca/cunews/offices/provost/health/topics/healthy-eating/vegetarian-vegan-diets.html?c=/health/topics/healthy-eating">Benefits of Vegetarian Diets</a></li>
+                    <li><a href="http://www.omafra.gov.on.ca/english/crops/facts/10-013w.htm%22%3EAbout"> Bio Products</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Giuseppe_Verdi%22%3EAbout"> Verdi Products</a></li>
                 </ul>
             </div>
         </div>
-    </footer>
+        </footer>
 
 
     <script src="verdiJS.js"></script>

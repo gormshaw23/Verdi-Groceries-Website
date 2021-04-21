@@ -140,7 +140,7 @@
         <a href="P9_admin.php">User List</a>
         <a href="P10.html">Order List</a>
         <div class="topnav-right">
-            <a href="">Search</a>
+            <a href="P5.php">Logout</a>
         </div>
     </div>
 

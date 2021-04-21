@@ -167,6 +167,7 @@
     justify-content: space-around;
     background: rgb(238, 174, 202);
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(192, 233, 148, 1) 100%);
+    padding:20px;
 }
         
         @media screen and (max-width: 600px) {
@@ -190,7 +191,7 @@
         <h2>Sign Up</h2>
     </div>
 
-    <div class="container">
+    <div>
 
     <?php
     if(isset($_POST['create_user'])){

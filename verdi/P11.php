@@ -36,7 +36,10 @@
             padding-bottom: 30px;
             padding-top: 30px;
         }
-        
+        .checkoutButton:hover{background-color: white;}
+        .addButton:hover{background-color:white}
+        .addButton{background-color:#90EE90;
+            padding:3px;background-color:#90EE90; border-radius:20px}
         .img1 {
             max-width: 200px;
             max-height: 200px;
@@ -69,11 +72,12 @@
         }
         
         .delButton {
-            background-color: orangered;
+            background-color: #90EE90;
+            
             float: right;
             border-radius: 25%;
         }
-        
+        .delButton:hover{background-color: orangered;}
         .containerBTN {
             width: 1100px;
             margin-left: auto;
@@ -98,21 +102,19 @@
             border-radius: 30px;
             float:right;
         }
-        .nb{font-family:'Courier New', Courier, monospace}
+        .nb{font-family: Georgia, 'Times New Roman', Times, serif}
     </style>
 </head>
 <?php  include "db.php"?>
 <body class="body3">
 
-    <div class="container">
-        <header class="topnav">
-           
-            <a href="P7_admin.php" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:large">Product list</a>
-            <a href="P12.php"style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:large">Add Items to Order</a>
-            <div class="topnav-right">
-            <a href="../verdi/P5.php"style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:large">Logout</a>
-            </div>
-        </header>
+    <div class="topnav">
+        <a href="P7_admin.php"style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:medium">Product List</a>
+        <a href="P12.php"style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:medium">Add a product</a>
+       
+        <div class="topnav-right">
+            <a href="../verdi/P5.php"style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:medium">Logout</a>
+        </div>
     </div>
 
     <img src="picturesD/Verdi.jpg" class="img1">
@@ -225,20 +227,7 @@ while($row = mysqli_fetch_assoc($select_products)){
         <button class="checkoutButton" onclick="orderPlaced()">Place Order</button>
         <button class="checkoutButton" onclick="updateCartTotal()">Calculate Total</button>
     </div>
-    <footer>
-        <div class="container">
-            <div class="final_row">
-                <br><br>
-                <div style="background-color:#333; color:beige; max-width:100%">
-                <h2>Useful Links</h2>
-                <ul>
-                    <li><a href="http://www.omafra.gov.on.ca/english/crops/facts/10-013w.htm"style="background-color:#333; color:beige">About Bio Products</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Giuseppe_Verdi"style="background-color:#333; color:beige">About Verdi Products</a></li>
-                </ul>
-</div>
-            </div>
-        </div>
-    </footer>
+    
     
 </body>
 

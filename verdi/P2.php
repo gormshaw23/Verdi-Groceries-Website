@@ -23,15 +23,12 @@
         }
     </style>
 </head>
-<div class="container">
+<div>
         <header class="topnav">
             <a href="P1.php">Home</a>
             <a href="P2.php">Shop</a>
             <a href="P4_php.php">My Cart</a>
             <a href="P5.php">My Account</a>
-            <div class="topnav-right">
-                <a href="">Search</a>   
-            </div>
         </header>
 </div>
 <?php  include "db.php"?>    
@@ -111,7 +108,7 @@
     </body>
 
     <footer>
-        <div class="container">
+        
             <div class="final_row">
                 <br><br>
                 <div style="background-color:#333; color:beige; max-width:100%">
@@ -122,7 +119,7 @@
                 </ul>
 </div>
             </div>
-        </div>
+        
     </footer>
 
 </html>

@@ -68,18 +68,19 @@
         }
         
         .delButton {
-            background-color: orangered;
+            background-color: #90EE90;
             float: right;
             border-radius: 25%;
+            padding:5px;
         }
-        
+        .delButton:hover{background-color:orangered;}
         .containerBTN {
             width: 1100px;
             margin-left: auto;
             margin-right: auto;
             height: 40px;
         }
-        
+        .addButton:hover{background-color:white;}
         .continueShopping {
             display: inline-block;
             background: #90EE90;
@@ -97,6 +98,8 @@
             border-radius: 30px;
             float:right;
         }
+        .checkoutButton:hover{background-color:white;}
+        .continueShopping:hover{background-color:white;}
     </style>
 </head>
 <?php  include "db.php"?>
@@ -107,7 +110,7 @@ if(isset($_GET['success'])==true)
     echo'<font-family Comic Sans><p align="center">Welcome, Verdi Shopper!</p></font-family>';
 }
 ?>
-    <div class="container">
+    <div>
         <header class="topnav">
             <a href="P1.php">Home</a>
             <a href="P2.php">Shop</a>
@@ -125,9 +128,11 @@ if(isset($_GET['success'])==true)
     <table border="border" class="namefield2" id="MyTable">
 
         <style>
+            .hh:hover{background-color: white;}
             .row {
                 display: none
             }
+            
         </style>
         <tr>
             <th class="org" style="background-color: #4CAF50">Product</th>
@@ -173,7 +178,7 @@ while($row = mysqli_fetch_assoc($select_products)){
                 <button onclick="<?php echo $product_delete_p4;?>" class="delButton">Delete</button>
             </th>
             <th>$<label id="<?php echo $priceVar;?>"><?php echo $prod_price_calc_p4;?></label></th>
-            <th><button class="addButton" onclick="<?php echo $product_add_p4;?>">+</button><input id=<?php echo $product_data_p4;?> type=number min=0 value="0"><button class="addButton" onclick="<?php echo $product_remove_p4;?>">-</button></th>
+            <th><button class="addButton" style="padding:3px; background-color:#90EE90; border-radius:20px"onclick="<?php echo $product_add_p4;?>">+</button><input id=<?php echo $product_data_p4;?> type=number min=0 value="0"><button class="addButton" style="padding:3px;background-color:#90EE90; border-radius:20px"onclick="<?php echo $product_remove_p4;?>">-</button></th>
             <th>$<label id="<?php echo $product_total_price;?>">0</label></th>
         </tr>
         <?php 
@@ -222,19 +227,18 @@ while($row = mysqli_fetch_assoc($select_products)){
         <button class="checkoutButton" onclick="updateCartTotal()">Calculate Total</button>
     </div>
     <footer>
-        <div class="container">
+        
             <div class="final_row">
                 <br><br>
                 <div style="background-color:#333; color:beige; max-width:100%">
                 <h2>Useful Links</h2>
                 <ul>
-                    
                     <li><a href="http://www.omafra.gov.on.ca/english/crops/facts/10-013w.htm"style="background-color:#333; color:beige">About Bio Products</a></li>
                     <li><a href="https://en.wikipedia.org/wiki/Giuseppe_Verdi"style="background-color:#333; color:beige">About Verdi Products</a></li>
                 </ul>
-                </div>
+</div>
             </div>
-        </div>
+        
     </footer>
     <script src="P4Script.js"></script>
 </body>

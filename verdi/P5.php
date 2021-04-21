@@ -21,6 +21,11 @@ if(isset($_GET['error'])==true)
 </head>
 
 <body>
+    <style>
+    a:hover{background-color: white; border-radius: 20px; padding:2px}
+    .second_button:hover{background-color:white}
+    .sign:hover{background-color:#90EE90; padding:2px; color:black; border-radius:20%}
+    </style>
     <div class="container">
         <header class="navbar">
             <div class="logo">
@@ -54,7 +59,7 @@ if(isset($_GET['error'])==true)
                             <br>
                         </div>
 
-                        <div class="">
+                        <div >
                             <input type="submit" name="login" class="second_button" id="" value ="Submit">
                         </div>
                 </form>
@@ -63,7 +68,7 @@ if(isset($_GET['error'])==true)
 
                 <div class="reg">
                     <h2>Not registered with Verdi? <br>
-                        <a href="P6.php"> <u>Sign Up Here!</u></a>
+                        <a href="P6.php"class="sign"> <u>Sign Up Here!</u></a>
                     </h2>
                 </div>
             </div>

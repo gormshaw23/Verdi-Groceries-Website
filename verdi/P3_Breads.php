@@ -21,21 +21,28 @@
     </style>
 </head>
 <?php  include "db.php"?>
-<div class="container">
-   <header class="topnav">
+<div>
+        <header class="topnav">
             <a href="P1.php">Home</a>
             <a href="P2.php">Shop</a>
             <a href="P4_php.php">My Cart</a>
             <a href="P5.php">My Account</a>
-            <div class="topnav-right">
-                <a href="">Search</a> 
-            </div>       
         </header>
+        <div class="Aisles">
+            <h1>Breads</h1>
+        </div>
 </div>
-<?php
+<body>
+<div class="products">
+        <div class="products_row">
+
+        <?php 
+
 $query = "SELECT * FROM products"; 
 $select_products = mysqli_query($connection, $query); 
-while($row = mysqli_fetch_assoc($select_products)){
+
+while($row = mysqli_fetch_assoc($select_products))
+{
     
     $product_id = $row['product_id'];
     $product_name = $row['product_name'];
@@ -52,118 +59,58 @@ while($row = mysqli_fetch_assoc($select_products)){
     $product_data_p4 = $row['product_data_p4'];
     $product_delete_p4 = $row['product_delete_p4'];
     $product_remove_p4 = $row['product_remove_p4'];
+    $visible=$row['visible'];
+    if($product_id>16)
+    {
+    ?>
+    
+            <div class="col-2">
+                <h1><?php echo $product_name; ?></h1>
+                <img src="picturesD/<?php echo $product_img;?>">
+                <h4><?php echo $product_price;?></h4>
+                <input type="number" value="1" min="0" id="<?php echo $product_qty; ?>">
+                <button href="" class="first_button" onclick="<?php echo $product_addToCart_P3; ?>">Add To Cart</button>
+            </div>
+
+            
+            <div class="col-2">
+            <button class="poof" onclick="<?php echo $visible?>">Click Here For Fun Fact!</button>
+                
+                <div id="fun_fact" style="display: none">
+                <h2>Fun Facts</h2>
+                <p>
+                <?php echo $product_facts;?>
+                </p>
+                </div>
+                
+           
+                <img src="picturesD/Verdi.jpg" class="img1">
+                
+            </div>
+            <?php
+    }
+    ?>
+            <?php 
 }
+
+
 ?>
-<body>
-    <div class="products"> 
-        <div class="products_row">
-            <div class="col-2">
-                <h1>Bagels</h1>
-                <img src="picturesD/bagel.jpg">
-                <h4 >$4.98/pack(6)</h4>
-                <input type="number" value="1" min="0" id="bagelqty">
-                <button class="first_button" onclick="addToCartBagel()">Add To Cart</button>
-            </div>
-            <div class="col-2">
-                
-                <button class="poof" onclick="ShowAndHide()">Click Here For Fun Fact!</button>
-                
-                <div id="fun_fact" style="display: none">
-                <h2>Fun Facts</h2>
-                <p>
-                   Bagels are not the healthiest bread. In fact, they are very high in carbs and only supply small amounts of fat and protein. They also naturally contain small quantities of vitamins and minerals. However, they are delicious when toasted and loaded with butter!
-                </p>
-                </div>
-                <img src="picturesD/Verdi.jpg" class="img1">
-            </div>
         </div>
-    </div>
-    
-    
-    
-    <div class="products"> 
-        <div class="products_row">
-            <div class="col-2">
-                <h1>Baguette</h1>
-                <img src="picturesD/baguette.jpg">
-                <h4 >$2.99/each</h4>
-                <input type="number" min="0" value="1" id="baguetteqty">
-                <button class="first_button" onclick="addToCartBaguette()">Add To Cart</button>
-            </div>
-            <div class="col-2">
-                
-                <button class="poof" onclick="ShowAndHide()">Click Here For Fun Fact!</button>
-                
-                <div id="fun_fact" style="display: none">
-                <h2>Fun Facts</h2>
-                <p>
-                   Baguettes are high in calories and are high in carbs. May not be the most healthy bread, but is definitly the best tasting!
-                </p>
-                </div>
-                <img src="picturesD/Verdi.jpg" class="img1">
-            </div>
-        </div>
-    </div>
-    
-    <div class="products"> 
-        <div class="products_row">
-            <div class="col-2">
-                <h1>Sliced Bread</h1>
-                <img src="picturesD/toast.jpg">
-                <h4 >$2.79/loaf</h4>
-                <input type="number" value="1" min="0" id="toastqty">
-                <button class="first_button" onclick="addToCartToast()">Add To Cart</button>
-            </div>
-            <div class="col-2">
-                
-                <button class="poof" onclick="ShowAndHide()">Click Here For Fun Fact!</button>
-                
-                <div id="fun_fact" style="display: none">
-                <h2>Fun Facts</h2>
-                <p>
-                   Sliced bread is high in carbs, low in micronutrients and its gluten and antinutrient contents may not be good for your health. Delicious but dangerous! 
-                </p>
-                </div>
-                <img src="picturesD/Verdi.jpg" class="img1">
-            </div>
-        </div>
-    </div>
-    
-    <div class="products"> 
-        <div class="products_row">
-            <div class="col-2">
-                <h1>Tortilla</h1>
-                <img src="picturesD/tortilla.jpg">
-                <h4 >$3.69/pack(10)</h4>
-                <input type="number" value="1" min="0" id="tortqty">
-                <button class="first_button" onclick="addToCartTort()">Add To Cart</button>
-            </div>
-            <div class="col-2">
-                <button class="poof" onclick="ShowAndHide2()">Click Here For Fun Fact!</button>
-                
-                <div id="fun_fact" style="display: none">
-                <h2>Fun Facts</h2>
-                <p>
-                  Our tortillas are whole grain! That means they provide more fiber, which is beneficial for your heart and digestive health!
-                </p>
-                </div>
-                <img src="picturesD/Verdi.jpg" class="img1">
-            </div>
-        </div>
-        
     </div>
     
     <footer>
-        <div class="container">
+        
             <div class="final_row">
+                <br><br>
+                <div style="background-color:#333; color:beige; max-width:100%">
                 <h2>Useful Links</h2>
                 <ul>
-                    <li><a href="http://www.omafra.gov.on.ca/english/crops/facts/10-013w.htm">About Bio Products</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Giuseppe_Verdi">About Verdi Products</a></li>
+                    <li><a href="http://www.omafra.gov.on.ca/english/crops/facts/10-013w.htm"style="background-color:#333; color:beige">About Bio Products</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Giuseppe_Verdi"style="background-color:#333; color:beige">About Verdi Products</a></li>
                 </ul>
+</div>
             </div>
-        </div>
+        
     </footer>
 </body>
-
 </html>

@@ -28,13 +28,13 @@
     </style>
 </head>
 <?php  include "db.php"?>
-<div class="container">
+<div>
     <header class="topnav">
             
-            <a href="P7_admin.php">Product list</a>
-            <a href="P11.php">Order list</a>
+            <a href="P7_admin.php"style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:medium">Product list</a>
+            <a href="P11.php"style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:medium">Order list</a>
         <div class="topnav-right">
-            <a href="P5.php">Logout</a>
+            <a href="P5.php"style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:medium">Logout</a>
         </div>
     </header>
 </div>
@@ -95,17 +95,18 @@ while($row = mysqli_fetch_assoc($select_products)){
    
 
     <footer>
-        <div class="container">
+        
             <div class="final_row">
+                <br><br>
                 <div style="background-color:#333; color:beige; max-width:100%">
                 <h2>Useful Links</h2>
                 <ul>
-                    <li ><a href="http://www.omafra.gov.on.ca/english/crops/facts/10-013w.htm"style="background-color:#333; color:beige">About Bio Products</a></li>
+                    <li><a href="http://www.omafra.gov.on.ca/english/crops/facts/10-013w.htm"style="background-color:#333; color:beige">About Bio Products</a></li>
                     <li><a href="https://en.wikipedia.org/wiki/Giuseppe_Verdi"style="background-color:#333; color:beige">About Verdi Products</a></li>
                 </ul>
+</div>
             </div>
-            </div>
-        </div>
+        
     </footer>
 </body>
 

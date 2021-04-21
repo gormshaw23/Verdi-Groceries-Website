@@ -273,7 +273,7 @@ while($row = mysqli_fetch_assoc($select_users_query)){
                 </select>
             </div>
 
-            <input style="margin-top: 15px;" type="submit" name="edit_user" value="Add User">
+            <input style="margin-top: 15px;" type="submit" name="edit_user" value="Edit User">
 
         </form>
     </div>

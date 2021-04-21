@@ -23,7 +23,7 @@
         }
     </style>
 </head>
-<?php  include "include/db.php"?>
+<?php  include "db.php"?>
 <div class="container">
     <header class="topnav">
             <a href="P1.php">Home</a>
