@@ -1,5 +1,5 @@
 # soen-287
-# Project for SOEN 287 Winter 2021  
+# Project for SOEN 287 Winter 2021 @ Concordia University, MTL
 
 ## Overview 
 * A project practicing the core objectives of SOEN 287 @ Concordia University, Montreal.
